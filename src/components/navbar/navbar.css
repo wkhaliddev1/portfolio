@@ -1,0 +1,48 @@
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  background-color: rgb(21, 41, 49);
+}
+
+.navbar-li {
+  flex: 0.5;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-li li {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-li a {
+  height: 50px;
+  color: white;
+  text-decoration: none;
+  font-family: Arial;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-li li:hover {
+  background-color: rgb(146, 144, 144);
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-li {
+    flex: 1;
+  }
+}
